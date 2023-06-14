@@ -1,3 +1,10 @@
+# Commands to run before running 
+npm run dev in one terminal and npm run serve in other terminal
+
+# make sure to run 
+npx tailwindcss -i ./client/input.css -o ./build/css/app.css --watch
+
+# Readme contents old
 # Server-Side Rendered React with Node and Typescript
 This is a project template for server-side rendered react application with node all written in typescript.
 

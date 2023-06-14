@@ -7,7 +7,7 @@
     "dev": "nodemon --exec \"./node_modules/.bin/webpack --config webpack/webpack.config.js --env env=prod\" client/index.tsx",
     "serve": "nodemon --exec \"./node_modules/.bin/ts-node\" --ext js,jsx,ts,tsx --watch client server/server.ts",
     "start": "node dist/server/server.js",
-    "build": "rm -rf && cd server && tsc",
+    "build": "rm -rf && cd server && tsc && ",
     "build-img": "docker build -t <image-name> ."
   },
   "repository": {
@@ -54,6 +54,7 @@
     "prettier": "^2.3.1",
     "react-refresh": "^0.9.0",
     "style-loader": "^2.0.0",
+    "tailwindcss": "^3.3.2",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.3",
     "webpack": "^5.39.1",
