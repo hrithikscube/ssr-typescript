@@ -4,12 +4,13 @@
   "description": "This is a project template for server-side rendered react application with node, all written in typescript both the server and the client",
   "main": "index.js",
   "scripts": {
-    "tailwindBuild":" tailwindcss -i ./client/input.css -o ./build/css/app.css --watch",
-    "dev": "nodemon --exec \"./node_modules/.bin/webpack --config webpack/webpack.config.js --env env=prod\" client/index.tsx",
+    "tailwindBuild": " tailwindcss -i ./client/input.css -o ./build/css/app.css --watch",
+    "devScripts": "nodemon --exec \"./node_modules/.bin/webpack --config webpack/webpack.config.js --env env=prod\" client/index.tsx",
+    "dev": "concurrently \"npm run tailwindBuild \" \"npm run devScripts \"",
     "serve": "nodemon --exec \"./node_modules/.bin/ts-node\" --ext js,jsx,ts,tsx --watch client server/server.ts",
     "start": "node dist/server/server.js",
     "build": "rm -rf && cd server && tsc",
-    "build-img": "docker build -t <image-name> ."
+    "build-img": "docker build -t <image-name>."
   },
   "repository": {
     "type": "git",

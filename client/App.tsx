@@ -9,7 +9,7 @@ export const App: FunctionComponent = () => {
         <p className='text-6xl font-medium text-red-500'>Hello world</p>
         <br />
         <div className='flex items-center gap-5'>
-            <button onClick={() => setCounter(counter - 1)} className='p-3 bg-[#f35] text-black font-medium'>decrements</button>
+            <button onClick={() => setCounter(counter - 1)} className='p-3 bg-[#f2f2] text-black font-medium'>decrement</button>
             <p>{counter}</p>
             <button onClick={() => setCounter(counter + 1)} className='p-3 bg-[#f2f2f2] text-black font-medium'>increment</button>
         </div>

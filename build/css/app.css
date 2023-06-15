@@ -546,13 +546,23 @@ video {
   gap: 1.25rem;
 }
 
-.bg-\[\#f2f2\] {
-  background-color: #f2f2;
-}
-
 .bg-\[\#f2f2f2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f35\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 51 85 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f2f222\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 34 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f2f2\] {
+  background-color: #f2f2;
 }
 
 .p-3 {
